@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.threadlbl = new System.Windows.Forms.Label();
             this.btnrun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // threadlbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(229, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "-Thread Starts-";
+            this.threadlbl.AutoSize = true;
+            this.threadlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.threadlbl.Location = new System.Drawing.Point(229, 102);
+            this.threadlbl.Name = "threadlbl";
+            this.threadlbl.Size = new System.Drawing.Size(362, 55);
+            this.threadlbl.TabIndex = 0;
+            this.threadlbl.Text = "-Thread Starts-";
             // 
             // btnrun
             // 
@@ -61,7 +61,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnrun);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.threadlbl);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -71,7 +71,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label threadlbl;
         private System.Windows.Forms.Button btnrun;
     }
 }
