@@ -36,7 +36,7 @@
             // 
             this.threadlbl.AutoSize = true;
             this.threadlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.threadlbl.Location = new System.Drawing.Point(229, 102);
+            this.threadlbl.Location = new System.Drawing.Point(229, 141);
             this.threadlbl.Name = "threadlbl";
             this.threadlbl.Size = new System.Drawing.Size(362, 55);
             this.threadlbl.TabIndex = 0;
@@ -47,7 +47,7 @@
             this.btnrun.BackColor = System.Drawing.Color.RosyBrown;
             this.btnrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrun.ForeColor = System.Drawing.Color.Black;
-            this.btnrun.Location = new System.Drawing.Point(341, 193);
+            this.btnrun.Location = new System.Drawing.Point(341, 232);
             this.btnrun.Name = "btnrun";
             this.btnrun.Size = new System.Drawing.Size(119, 51);
             this.btnrun.TabIndex = 1;
@@ -59,6 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnrun);
             this.Controls.Add(this.threadlbl);
