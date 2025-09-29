@@ -21,7 +21,7 @@ namespace frmTrackThread
 
         private void btnrun_Click(object sender, EventArgs e)
         {
-            
+            MyThreadClass.frmTrackThread(threadlbl);
         }
 
         public class MyThreadClass
@@ -48,7 +48,36 @@ namespace frmTrackThread
                 
             }
 
-           
+            public static void frmTrackThread(Label lblthread) 
+            {
+                Thread ThreadA = new Thread(new ThreadStart(MyThreadClass.Thread1));
+                Thread ThreadB = new Thread(new ThreadStart(MyThreadClass.Thread2));
+                Thread ThreadC = new Thread(new ThreadStart(MyThreadClass.Thread1));
+                Thread ThreadD = new Thread(new ThreadStart(MyThreadClass.Thread2));
+
+                ThreadA.Name = "Thread A";
+                ThreadB.Name = "Thread B";
+                ThreadC.Name = "Thread C";
+                ThreadD.Name = "Thread D";
+
+                ThreadA.Priority = ThreadPriority.Highest;
+                ThreadB.Priority = ThreadPriority.Normal;
+                ThreadC.Priority = ThreadPriority.AboveNormal;
+                ThreadD.Priority = ThreadPriority.BelowNormal;
+
+                ThreadA.Start();
+                ThreadB.Start();
+                ThreadC.Start();
+                ThreadD.Start();
+
+                ThreadA.Join();
+                ThreadB.Join();
+                ThreadC.Join();
+                ThreadD.Join();
+
+                Console.WriteLine("- End of Thread -");
+                lblthread.Text = "- End of Thread -";
+            }
 
            
         }
